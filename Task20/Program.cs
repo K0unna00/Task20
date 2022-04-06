@@ -1,5 +1,6 @@
 ﻿using System;
 using ClassLibrary;
+using Enums;
 
 namespace Task20
 {
@@ -20,12 +21,39 @@ namespace Task20
                     Console.WriteLine("Qiymeti yazin:");
                     double price = double.Parse(Console.ReadLine());
                     Console.WriteLine("Type-i yazin: ");
-                    string type = Console.ReadLine();
+                    TypeEnums types;
+                    foreach (var item in Enum.GetValues(typeof (TypeEnums)))
+                    {
+                        Console.WriteLine(item+ " " + (int)item);
+                    }
+                    bool NewCheck = true;
+                    int type = 0;
+                    while (NewCheck)
+                    {
+                        NewCheck=false;
+                        try
+                        {
+                            type = int.Parse(Console.ReadLine());
+
+                        }
+                        catch (Exception)
+                        {
+                            Console.WriteLine("Integer deyer daxil edin : ");
+                            NewCheck = true;
+                        }
+                    }
+                    while (!Enum.IsDefined(typeof(TypeEnums), type))
+                    {
+                        Console.WriteLine("Duz daxil et");
+                        type = int.Parse(Console.ReadLine());
+                    }
+                    types = (TypeEnums) type;
                     Product product = new Product()
                     {
                         Name = name,
                         Price = price,
-                        Type = type
+                        Type = types
+
                     };
 
                     store.AddProduct(product);
@@ -50,7 +78,7 @@ namespace Task20
                         break;
                     case "2":
                         Console.WriteLine("Type-i daxil edin : ");
-                        string type= Console.ReadLine();    
+                        string type= Console.ReadLine();  
                         store.FilterProductByType(type);
                         break;
                     case "3":

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Enums;
 
 namespace ClassLibrary
 {
@@ -23,14 +24,15 @@ namespace ClassLibrary
                     NewProducts[NewProducts.Length - 1] = item;
                 }
             }
-            Products= NewProducts;
+            Products = NewProducts;
         }
         public void FilterProductByType(string type)
         {
+            int typeInt=int.Parse(type);
             Product[] NewProducts = new Product[0];
             foreach (var item in Products)
             {
-                if (item.Type==type)
+                if (item.Type == (TypeEnums)typeInt)
                 {
                     Array.Resize(ref NewProducts, NewProducts.Length + 1);
                     NewProducts[NewProducts.Length - 1] = item;

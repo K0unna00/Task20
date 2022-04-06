@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Enums;
 namespace ClassLibrary
 {
     public class Product
@@ -12,7 +12,7 @@ namespace ClassLibrary
         public static int TotalCount;
         public string Name { get; set; }   
         private int No { get; set; }
-        public string Type { get; set; }
+        public TypeEnums Type { get; set; }
         public double Price { get; set; }
         public int GetNo()
         {

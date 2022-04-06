@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task20", "Task20\Task20.csproj", "{16AFD514-2439-4CB2-98CE-727510E333CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task20", "Task20\Task20.csproj", "{16AFD514-2439-4CB2-98CE-727510E333CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{F74A95CA-7D59-4E4A-BFD0-370DE058BF92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{F74A95CA-7D59-4E4A-BFD0-370DE058BF92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enums", "Enums\Enums.csproj", "{DEAB9D96-6ACE-458F-8BE4-134FC16EE021}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F74A95CA-7D59-4E4A-BFD0-370DE058BF92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F74A95CA-7D59-4E4A-BFD0-370DE058BF92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F74A95CA-7D59-4E4A-BFD0-370DE058BF92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEAB9D96-6ACE-458F-8BE4-134FC16EE021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEAB9D96-6ACE-458F-8BE4-134FC16EE021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEAB9D96-6ACE-458F-8BE4-134FC16EE021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEAB9D96-6ACE-458F-8BE4-134FC16EE021}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
